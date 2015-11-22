@@ -89,17 +89,18 @@ names(subject)<-c("subject")
         
 # create a tidy data set with the average of each variable for each activit and each subject
 tidy_run_data<-data.frame(matrix(nrow=nrow(total_acc_x),ncol=10))
-names(tidy_run_data)<-c("subject","body_acc_x","body_acc_y","body_acc_z","body_gyro_x","body_gyro_y","body_gyro_z","total_acc_x","total_acc_y","total_acc_z")
+names(tidy_run_data)<-c("subject","total_acc_x","total_acc_y","total_acc_z","body_acc_x","body_acc_y","body_acc_z","body_gyro_x","body_gyro_y","body_gyro_z")
 tidy_run_data$subject<-subject$subject
+tidy_run_data$total_acc_x<-total_acc_x_mean_sd$total_acc_x_mean
+tidy_run_data$total_acc_y<-total_acc_y_mean_sd$total_acc_y_mean
+tidy_run_data$total_acc_z<-total_acc_z_mean_sd$total_acc_z_mean
 tidy_run_data$body_acc_x<-body_acc_x_mean_sd$body_acc_x_mean
 tidy_run_data$body_acc_y<-body_acc_y_mean_sd$body_acc_y_mean
 tidy_run_data$body_acc_z<-body_acc_z_mean_sd$body_acc_z_mean
 tidy_run_data$body_gyro_x<-body_gyro_x_mean_sd$body_gyro_x_mean
 tidy_run_data$body_gyro_y<-body_gyro_y_mean_sd$body_gyro_y_mean
 tidy_run_data$body_gyro_z<-body_gyro_z_mean_sd$body_gyro_z_mean
-tidy_run_data$total_acc_x<-total_acc_x_mean_sd$total_acc_x_mean
-tidy_run_data$total_acc_y<-total_acc_y_mean_sd$total_acc_y_mean
-tidy_run_data$total_acc_z<-total_acc_z_mean_sd$total_acc_z_mean
 
 # write the tidy data set to a txt file
 write.table(tidy_run_data,file = "./data/tidy_run_data.txt", row.names = F, col.names = T,sep = "\t",quote = F)
+
