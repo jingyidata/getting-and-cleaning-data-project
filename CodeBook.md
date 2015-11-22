@@ -5,8 +5,8 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 The tidy_run_data includes average of each variable for each activity and each subject.
 
 Column 1. subject:
-  This is the identification number of 30 volunteers performed the activity. Its range is from 1 to 30
-  This column merges the training and test data sets (subject_train.txt and subject_test.txt).
+  This is the identification number of 30 volunteers performed the activity. Its range is from 1 to 30.
+  This column is merged data of training and test data sets (subject_train.txt and subject_test.txt).
   
 Column 2. total_acc_x:
   The acceleration signal from the smartphone accelerometer x axis in standard gravity units 'g'. 
