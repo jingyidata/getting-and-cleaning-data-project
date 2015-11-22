@@ -84,7 +84,6 @@ total_acc_z_mean_sd<-data.frame(matrix(nrow=nrow(total_acc_z),ncol=2))
 total_acc_z_mean_sd[,1]<-rowMeans(total_acc_z)
 total_acc_z_mean_sd[,2]<-rowSds(as.matrix(total_acc_z))
 names(total_acc_z_mean_sd)<-c("total_acc_z_mean","total_acc_z_sd")
-
 names(subject)<-c("subject")
         
 # create a tidy data set with the average of each variable for each activit and each subject
