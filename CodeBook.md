@@ -25,6 +25,7 @@ For each record it is provided:
 
 
 Codebook:
+
 The tidy_run_data includes average of each variable for each activity and each subject.
 
 Column 1. subject:
