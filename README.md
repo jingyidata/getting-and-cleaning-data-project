@@ -1,6 +1,6 @@
 # getting-and-cleaning-data-project
 Step1: 
-put the raw data sets in the same folder. list of files:
+put the raw data sets in the same folder. List of files:
 --subject_train.txt,
 --subject-test.txt,
 --total_acc_x_train.txt,
