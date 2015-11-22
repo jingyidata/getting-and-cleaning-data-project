@@ -1,4 +1,4 @@
-                                 DATA DICTIONARY -- Human Activity Recognition Using Smartphones Data Set
+                                 CodeBook -- Human Activity Recognition Using Smartphones Data Set
 
 Study Design:                                
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
@@ -22,6 +22,7 @@ For each record it is provided:
 - A 561-feature vector with time and frequency domain variables. 
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
+
 
 
 Codebook:
